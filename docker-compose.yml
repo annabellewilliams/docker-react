@@ -3,7 +3,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.dev # specify which file to use to build the image for this service
     ports:
       - "3000:3000"
     volumes:
